@@ -1,0 +1,48 @@
+Connected three datasets: additional, data, and customers.
+
+Used UNION ALL to merge additional and data (same columns).
+
+Stored the result as a new dataset: combined_data.
+
+Used a subquery to join combined_data with customers on customer_code.
+
+Created a new dataset from that join: sample_data1.
+
+Wrote a query to get max(sales) by sales_rep, customer, and region.
+
+Filtered only two reps: Abhay and Anshika using HAVING.
+
+Sorted the results by customer and region DESC.
+
+Saved the result into a new dataset: datatable2.
+
+Opened Power BI and imported the dataset.
+
+Used a cluster column chart to visualize data.
+
+Added a slicer for filtering by customer.
+
+Final chart shows max sales by sales_rep across region and customer.
+
+Clean, clear insights on who sold what, where, and how much!
+
+
+
+SQL Code Used
+
+-- Use the correct database
+USE batchBB;
+
+-- View joined dataset
+SELECT * FROM sample_data1;
+
+-- Create summarized dataset
+SELECT sales_rep, customer, region, MAX(sales) AS max_sales 
+INTO datatable2 
+FROM sample_data1 
+GROUP BY sales_rep, customer, region 
+HAVING sales_rep = 'abhay' OR sales_rep = 'anshika' 
+ORDER BY customer, region DESC;
+
+-- View the final result
+SELECT * FROM datatable2;
