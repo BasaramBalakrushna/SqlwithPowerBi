@@ -1,0 +1,66 @@
+sales_rep,customer,region,max_sales
+Abhay,Boston Consultants,East,12000
+Abhay,Boston Consultants,North,11050
+Abhay,Boston Consultants,South,13300
+Abhay,Boston Consultants,West,12900
+Abhay,Data Tronics,East,12550
+Abhay,Data Tronics,North,13300
+Abhay,Data Tronics,South,13600
+Abhay,Data Tronics,West,12500
+Abhay,Good Fly,East,11400
+Abhay,India Trotters,North,11850
+Abhay,India Trotters,West,11350
+Abhay,Jindle Power Works,East,14550
+Abhay,Jindle Power Works,North,12600
+Abhay,Jindle Power Works,South,14550
+Abhay,MNTL,East,11800
+Abhay,MNTL,North,14950
+Abhay,MNTL,South,11000
+Abhay,MNTL,West,14150
+Abhay,Namint Enterprises,South,15000
+Abhay,Shah Associates,East,14100
+Abhay,Shah Associates,North,13650
+Abhay,Shah Associates,South,12200
+Abhay,Shah Associates,West,13750
+Abhay,Sharma & Co,North,11700
+Abhay,Sharma & Co,South,12400
+Abhay,Sharma & Co,West,14800
+Abhay,Shyam & Sharma Co,East,10900
+Abhay,Shyam & Sharma Co,North,13100
+Abhay,Shyam & Sharma Co,South,14500
+Abhay,VCC,North,14350
+Abhay,White Associates,North,14950
+Abhay,White Associates,South,12950
+Abhay,White Associates,West,12850
+Anshika,Boston Consultants,East,13550
+Anshika,Boston Consultants,North,13200
+Anshika,Boston Consultants,South,12700
+Anshika,Boston Consultants,West,14700
+Anshika,Data Tronics,East,11200
+Anshika,Data Tronics,North,14500
+Anshika,Data Tronics,South,12300
+Anshika,Data Tronics,West,11300
+Anshika,Good Fly,East,12900
+Anshika,Good Fly,North,14350
+Anshika,Good Fly,South,14500
+Anshika,Good Fly,West,12450
+Anshika,India Trotters,South,14150
+Anshika,India Trotters,West,13450
+Anshika,Jindle Power Works,East,13600
+Anshika,Jindle Power Works,South,11750
+Anshika,Jindle Power Works,West,14000
+Anshika,Namint Enterprises,North,14800
+Anshika,Namint Enterprises,South,12050
+Anshika,Shah Associates,North,11450
+Anshika,Shah Associates,South,14700
+Anshika,Sharma & Co,East,12550
+Anshika,Sharma & Co,North,11850
+Anshika,Sharma & Co,West,14000
+Anshika,Shyam & Sharma Co,East,10850
+Anshika,Shyam & Sharma Co,South,13900
+Anshika,Shyam & Sharma Co,West,13750
+Anshika,VCC,North,13950
+Anshika,VCC,West,14700
+Anshika,White Associates,East,14300
+Anshika,White Associates,South,13050
+Anshika,White Associates,West,14100
