@@ -1,5 +1,3 @@
-Max Sales Analysis by Sales Rep — Documentation
-
 Overview
 
 This project identifies the maximum sales values for two sales representatives (Abhay and Anshika) across customers and regions, using SQL for data preparation and Power BI for visualization.
