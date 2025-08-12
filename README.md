@@ -1,0 +1,65 @@
+Max Sales Analysis by Sales Rep — Documentation
+
+Overview
+
+This project identifies the maximum sales values for two sales representatives (Abhay and Anshika) across customers and regions, using SQL for data preparation and Power BI for visualization.
+
+Steps Performed
+
+Connected three datasets: additional, data, and customers.
+
+Merged datasets: Used UNION ALL to combine additional and data (same columns).
+
+Created combined_data: Stored the merge result as a new dataset.
+
+Joined with customers: Used a subquery to join combined_data with customers on customer_code.
+
+Created sample_data1: Stored the join result as a new dataset.
+
+Aggregated sales: Wrote a query to get MAX(sales) grouped by sales_rep, customer, and region.
+
+Filtered reps: Selected only Abhay and Anshika using HAVING.
+
+Sorted results: Ordered by customer (ASC) and region (DESC).
+
+Created datatable2: Saved the summarized result into a new dataset.
+
+Visualized in Power BI: Imported datatable2 into Power BI.
+
+Built chart: Used a Cluster Column Chart to display max sales.
+
+Added slicer: Added a slicer to filter by customer.
+
+Insights: Final chart shows max sales by sales_rep across region and customer — clear visibility on who sold what, where, and how much.
+
+SQL Code Used
+
+-- Use the correct database
+USE batchBB;
+
+-- View joined dataset
+SELECT * FROM sample_data1;
+
+-- Create summarized dataset
+SELECT sales_rep, customer, region, MAX(sales) AS max_sales 
+INTO datatable2 
+FROM sample_data1 
+GROUP BY sales_rep, customer, region 
+HAVING sales_rep = 'abhay' OR sales_rep = 'anshika' 
+ORDER BY customer, region DESC;
+
+-- View the final result
+SELECT * FROM datatable2;
+
+Deliverables
+
+SQL Scripts: Data preparation, merging, joining, and aggregation.
+
+Power BI Dashboard: Cluster Column Chart + Customer slicer.
+
+Insights: Clear view of sales performance for targeted sales reps.
+
+Key Insight
+
+This approach provides a clean, efficient way to monitor top sales per rep, region, and customer, enabling data-driven decisions.
+
